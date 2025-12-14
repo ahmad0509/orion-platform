@@ -1,0 +1,20 @@
+version: "3.8"
+
+name: orion-platform
+
+services:
+  redis:
+    image: redis:7
+    container_name: orion-redis
+    ports:
+      - "6379:6379"
+
+  postgres:
+    image: postgres:15
+    container_name: orion-postgres
+    environment:
+      POSTGRES_USER: orion
+      POSTGRES_PASSWORD: orion
+      POSTGRES_DB: orion
+    ports:
+      - "5432:5432"
