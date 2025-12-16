@@ -1,10 +1,10 @@
-package com.platform.gatewayservice;
+package com.platform.realtime;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GatewayServiceApplicationTests {
+class RealtimeServiceApplicationTests {
 
     @Test
     void contextLoads() {
